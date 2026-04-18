@@ -12,18 +12,20 @@
       color: #333;
     }
     header {
-      background: rgba(210, 105, 30, 0.8);
+      background: rgba(210, 105, 30, 0.85);
       color: white;
-      padding: 30px;
+      padding: 40px;
       text-align: center;
+      animation: fadeIn 2s ease-in-out;
     }
     section {
       background: rgba(255, 255, 255, 0.9);
       margin: 30px auto;
-      padding: 20px;
+      padding: 25px;
       width: 85%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      animation: slideUp 1.5s ease-in-out;
     }
     h3 { color: #b23a48; }
     .countdown { font-size: 24px; color: #b23a48; }
@@ -35,11 +37,14 @@
     button {
       background: #b23a48; color: white; padding: 10px;
       border: none; border-radius: 5px; cursor: pointer;
+      transition: background 0.3s;
     }
+    button:hover { background: #8c2a35; }
     footer {
-      background: rgba(210, 105, 30, 0.8);
-      color: white; padding: 15px; margin-top: 30px;
+      background: rgba(210, 105, 30, 0.85);
+      color: white; padding: 20px; margin-top: 30px;
       text-align: center;
+      animation: fadeIn 2s ease-in-out;
     }
     .gallery {
       display: flex; justify-content: center; gap: 15px;
@@ -48,6 +53,16 @@
     .gallery img {
       width: 200px; height: 150px; object-fit: cover;
       border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover { transform: scale(1.05); }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
