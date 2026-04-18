@@ -15,15 +15,17 @@
       background: rgba(210, 105, 30, 0.8);
       color: white;
       padding: 30px;
+      text-align: center;
     }
     section {
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.9);
       margin: 30px auto;
       padding: 20px;
-      width: 80%;
+      width: 85%;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
+    h3 { color: #b23a48; }
     .countdown { font-size: 24px; color: #b23a48; }
     .form-box { margin: 20px auto; width: 300px; text-align: left; }
     input, textarea {
@@ -37,6 +39,7 @@
     footer {
       background: rgba(210, 105, 30, 0.8);
       color: white; padding: 15px; margin-top: 30px;
+      text-align: center;
     }
     .gallery {
       display: flex; justify-content: center; gap: 15px;
@@ -52,15 +55,15 @@
 
 <header>
   <h1>Undangan Pernikahan</h1>
-  <h2>Edi & Sesilia</h2>
+  <h2>Edi Kurniawan & Sesilia</h2>
   <p>Bismillahirrahmanirrahim</p>
   <p>Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
 </header>
 
 <section>
   <h3>Detail Acara</h3>
-  <p><strong>Akad Nikah:</strong> Sabtu, 25 April 2026, 09:00 WIB<br>Masjid Agung Pontianak</p>
-  <p><strong>Resepsi:</strong> Sabtu, 25 April 2026, 13:00 WIB<br>Gedung Serbaguna Pontianak</p>
+  <p><strong>Akad Nikah:</strong> Kamis, 16 April 2026, 08:00 WIB<br>KUA Nanga Taman</p>
+  <p><strong>Resepsi:</strong> Minggu, 19 April 2026, 13:00 WIB – 21:00 WIB<br>Kediaman Bpk. Syah Arpendi, Dusun Nanga Ketiur</p>
 </section>
 
 <section>
@@ -105,7 +108,8 @@
 </section>
 
 <footer>
-  <p>Terima kasih atas doa dan restu Anda.<br>Keluarga Besar Edi & Sesilia</p>
+  <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.<br>
+  Hormat kami, Keluarga Besar Bpk. Syah Arpendi & Keluarga Besar Bpk. Antonius Juteng</p>
 </footer>
 
 <audio autoplay loop>
@@ -114,7 +118,7 @@
 
 <script>
   // Countdown script
-  const targetDate = new Date("Apr 25, 2026 13:00:00").getTime();
+  const targetDate = new Date("Apr 19, 2026 13:00:00").getTime();
   const countdownElement = document.getElementById("countdown");
   setInterval(() => {
     const now = new Date().getTime();
